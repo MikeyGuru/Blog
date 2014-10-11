@@ -1,0 +1,16 @@
+<h1>New Blogs</h1>
+
+<table class="fronttable">
+  <tbody>
+    <% @posts.order(published_date: :desc).each do |post| %>
+      <tr>
+        <td>
+        <h3><%= link_to post.title, post %></h3>
+        <p><%= post.author   %>  <%=  post.published_date %></p>
+        <p><%= post.body %></p>
+        <p><%= link_to 'Read', post %></p>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
