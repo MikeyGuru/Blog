@@ -52,3 +52,5 @@ gem 'binding_of_caller'
      gem 'compass-rails'
      # Add any compass extensions here
    end
+
+gem 'redcarpet', '~> 3.0.0'

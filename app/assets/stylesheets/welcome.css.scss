@@ -12,7 +12,7 @@
 
 
 .fronttable {
-    border-collapse: seperate;
+    border-collapse: collapse;
     width: 50%;
     table-layout: fixed;
     //  border-radius: 25px;
@@ -21,7 +21,7 @@
 }
 
 
-.fronttable td {
+#fronttable td {
   // border-radius: 25px;
   border: 1px solid #ccc;
   text-align: left;
