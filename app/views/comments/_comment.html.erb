@@ -1,16 +1,13 @@
 <% @post.comments.each do |comment| %>
 <p>
- <strong>User:</strong>
- <%= comment.user %>
-
- </p>
-
- <p>
-   <strong>Comment:</strong>
-   <%= comment.body %>
- </p>
- <p>
-   <%= image_tag @post.comment.image.url(:medium) %>
-
- </p>
+  <strong>User:</strong>
+  <%= comment.user %>
+</p>
+<p>
+  <strong>Comment:</strong>
+  <%= comment.body %>
+</p>
+<p>
+  <%= image_tag @post.comment.image.url(:medium) %>
+</p>
 <% end %>
