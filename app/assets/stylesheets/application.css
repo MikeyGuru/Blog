@@ -48,3 +48,10 @@ width: 290px;
 #logo {
 
 }
+
+@font-face {
+  font-family:'Indie Flower';
+  src: url('http://fonts.googleapis.com/css?family=Indie+Flower');
+  font-weight: 300;
+  font-style: normal;
+}
