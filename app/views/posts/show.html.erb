@@ -8,7 +8,7 @@
 
 <p>
   <strong>Body:</strong>
-  <%= @post.body %>
+  <%= markdown(@post.body) %>
 </p>
 
 <p>
@@ -16,6 +16,11 @@
   <%= @post.author %>
   <strong>Date:</strong>
   <%= @post.published_date %>
+</p>
+<p><p><% if @post.image? %>
+  <%= image_tag @post.image.url(:medium) %>
+  <%end%>
+
 </p>
 
 <h2>Comments</h2>
@@ -28,6 +33,12 @@
  <p>
    <strong>Comment:</strong>
    <%= comment.body %>
+ </p>
+ <p><% if comment.image? %>
+   <%= image_tag comment.image.url(:medium) %>
+   <%end%>
+
+
  </p>
 <% end %>
 
@@ -43,6 +54,9 @@
 
     <%= f.text_area :body %>
   </p>
+  <div class="field">
+  <%= f.file_field :image %>
+</div>
   <div>
     <%= f.submit %>
   </div>

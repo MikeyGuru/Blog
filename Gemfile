@@ -44,7 +44,7 @@ gem 'simple_form'
 
 gem 'better_errors', group: :development
 
-
+gem "paperclip", "~> 4.2"
 
 gem 'binding_of_caller'
 
